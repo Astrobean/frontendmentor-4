@@ -28,7 +28,41 @@
   </head>
   <body>
     <div class="card">
-      <section class="card__images"></section>
+      <section class="card__images">
+        <!-- Mobile images are hidden at >375px viewports -->
+        <img
+          id="imgMobileWoman"
+          class="mobile-only"
+          src="images/illustration-woman-online-mobile.svg"
+          alt="illustration of woman using modern web technology"
+        />
+        <img
+          id="imgMobilePattern"
+          class="mobile-only"
+          src="images/bg-pattern-mobile.svg"
+          alt="background pattern"
+        />
+
+        <!-- Desktop images are only shown at >375px viewports -->
+        <img
+          id="cube"
+          class="desktop-only"
+          src="images/illustration-box-desktop.svg"
+          alt="cube with @-symbol"
+        />
+        <img
+          id="imgDesktopWoman"
+          class="desktop-only"
+          src="images/illustration-woman-online-desktop.svg"
+          alt="illustration of woman using modern web technology"
+        />
+        <img
+          id="imgDesktopPattern"
+          class="desktop-only"
+          src="images/bg-pattern-desktop.svg"
+          alt="background pattern"
+        />
+      </section>
       <section class="card__faq"></section>
     </div>
 
