@@ -1,7 +1,15 @@
-// for each list, add eventlistener 'click:
-// this.classList.toggle('active') creates and deletes the 'active' class
+// This script allows for the accordions to open and collapse
 
-// make a css active class selector which displays an open accordion
-// add transition
-// rotated icon using 'content'
+const togglers = document.getElementsByClassName("accordion__toggler")
 
+for(i = 0; i < togglers.length; i++) { // for each toggler that exists ...
+
+    togglers[i].addEventListener("click", function() { // ... wait until someone clicks on it ...
+
+        this.firstElementChild.toggle("active") // ... then add the "active class to the toggler's first child element (accordion__title) ...
+        this.lastElementChild.classList.toggle("active") // ... to the toggler's last child element (accordion__arrow) ...
+        this.nextElementSibling.classList.toggle("active") // ... and finally to the toggler's sibling element (accordion__panel)!
+
+    })
+
+}
