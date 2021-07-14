@@ -60,27 +60,31 @@ body {
 
 .accordions {
   height: 20rem;
+  margin: 1rem;
 }
 
 .accordions .accordion {
   width: 100%;
-  padding: 1rem;
-  border-bottom: #e7e7e9;
+  border-bottom: 1px solid #e7e7e9;
+  margin-bottom: 0.5rem;
 }
 
 .accordions .accordion .accordion__toggler {
-  height: 2rem;
+  display: flex;
+  align-items: center;
   width: 100%;
   transition: all 0.2s;
+  margin-bottom: 0.5rem;
 }
 
 .accordions .accordion .accordion__toggler:hover,
 .accordions .accordion .accordion__toggler .active {
-  background: #e6e6e6;
   cursor: pointer;
 }
 
 .accordions .accordion .accordion__toggler .accordion__title {
+  flex: auto;
+  font-size: 0.8rem;
   font-weight: 400;
 }
 
@@ -89,11 +93,22 @@ body {
   font-weight: 700;
 }
 
+.accordions .accordion .accordion__toggler .accordion__arrow {
+  justify-self: end;
+  max-width: 0.5rem;
+  flex: 0 0 1rem;
+  right: 0.5rem;
+  transition: all 0.2s;
+}
+
 .accordions .accordion .accordion__toggler .accordion__arrow.active {
-  transform: scaleY(-1);
+  transform: rotate(-180deg);
 }
 
 .accordions .accordion .accordion__panel {
+  font-size: 0.8rem;
+  color: #787887;
+  margin-bottom: 0.5rem;
   display: none;
 }
 

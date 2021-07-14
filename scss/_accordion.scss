@@ -1,23 +1,27 @@
 .accordions {
   height: 20rem;
+  margin: 1rem;
 
   .accordion {
     width: 100%;
-    padding: 1rem;
-    border-bottom: $lightGrayishBlue;
+    border-bottom: 1px solid $lightGrayishBlue;
+    margin-bottom: 0.5rem;
 
     .accordion__toggler {
-      height: 2rem;
+      display: flex;
+      align-items: center;
       width: 100%;
       transition: all 0.2s;
+      margin-bottom: 0.5rem;
 
       &:hover,
       .active {
-        background: hsl(0, 0, 90%);
         cursor: pointer;
       }
 
       .accordion__title {
+        flex: auto;
+        font-size: 0.8rem;
         font-weight: 400;
 
         &:hover,
@@ -27,13 +31,22 @@
       }
 
       .accordion__arrow {
+        justify-self: end;
+        max-width: 0.5rem;
+        flex: 0 0 1rem;
+        right: 0.5rem;
+
+        transition: all 0.2s;
         &.active {
-          transform: scaleY(-1);
+          transform: rotate(-180deg);
         }
       }
     }
 
     .accordion__panel {
+      font-size: 0.8rem;
+      color: $darkGrayishBlue;
+      margin-bottom: 0.5rem;
       display: none;
 
       &.active {
