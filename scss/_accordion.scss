@@ -5,14 +5,14 @@
   .accordion {
     width: 100%;
     border-bottom: 1px solid $lightGrayishBlue;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
 
     .accordion__toggler {
       display: flex;
       align-items: center;
       width: 100%;
       transition: all 0.2s;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.8rem;
 
       &:hover,
       .active {
@@ -46,7 +46,8 @@
     .accordion__panel {
       font-size: 0.8rem;
       color: $darkGrayishBlue;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.8rem;
+      padding-right: 1.4rem;
       display: none;
 
       &.active {
