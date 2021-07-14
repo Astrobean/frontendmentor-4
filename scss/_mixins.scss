@@ -1,0 +1,26 @@
+// global mixins
+
+@mixin globalCard {
+  background-color: white;
+  border-radius: 2rem;
+  display: flex;
+  box-shadow: 0px 40px 30px rgba(0, 0, 0, 0.2);
+}
+
+@mixin highlightClickable {
+  &:hover {
+    cursor: pointer;
+    background-color: $softBlue;
+    color: white;
+    transition-property: background-color, color;
+    transition-duration: 0.2s;
+  }
+}
+
+@mixin showChildren {
+  outline: 1px dashed red;
+
+  * {
+    outline: 3px dotted yellowgreen;
+  }
+}

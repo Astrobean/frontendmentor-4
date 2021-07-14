@@ -24,6 +24,8 @@
     <!-- My Css -->
     <link rel="stylesheet" href="css/style.css" />
 
+    <script defer src="js/script.js"></script>
+
     <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
   <body>
@@ -60,21 +62,79 @@
           id="imgDesktopPattern"
           class="desktop-only"
           src="images/bg-pattern-desktop.svg"
-          alt="background pattern"
+          aria-hidden="true"
         />
       </section>
-      <section class="card__faq"></section>
+      <section class="card__faq">
+        <h1 class="card__title">FAQ</h1>
+        <div class="accordions">
+          <div class="accordion">
+            <div class="accordion__toggler">
+              <span class="accordion__title"
+                >How many team members can I invite?</span
+              >
+              <img
+                src="images/icon-arrow-down.svg"
+                alt=""
+                class="accordion__arrow"
+              />
+            </div>
+            <div class="accordion__panel">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__toggler">
+              <span class="accordion__title"
+                >What is the maximum file upload size?</span
+              >
+              <img
+                src="images/icon-arrow-down.svg"
+                alt=""
+                class="accordion__arrow"
+              />
+            </div>
+            <div class="accordion__panel">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__toggler">
+              <span class="accordion__title">How do I reset my password?</span>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt=""
+                class="accordion__arrow"
+              />
+            </div>
+            <div class="accordion__panel">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__toggler">
+              <span class="accordion__title"
+                >Can I cancel my subscription?</span
+              >
+              <img
+                src="images/icon-arrow-down.svg"
+                alt=""
+                class="accordion__arrow"
+              />
+            </div>
+            <div class="accordion__panel">
+              Yes! Send us a message and we’ll process your request no questions
+              asked. Do you provide additional support? Chat and email support
+              is available 24/7. Phone lines are open during normal business
+              hours.
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-
-    <!-- How many team members can I invite? You can invite up to 2 additional users
-    on the Free plan. There is no limit on team members for the Premium plan.
-    What is the maximum file upload size? No more than 2GB. All files in your
-    account must fit your allotted storage space. How do I reset my password?
-    Click “Forgot password” from the login page or “Change password” from your
-    profile page. A reset link will be emailed to you. Can I cancel my
-    subscription? Yes! Send us a message and we’ll process your request no
-    questions asked. Do you provide additional support? Chat and email support
-    is available 24/7. Phone lines are open during normal business hours. -->
 
     <!-- <div class="attribution">
       Challenge by

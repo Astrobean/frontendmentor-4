@@ -1,0 +1,44 @@
+.accordions {
+  height: 20rem;
+
+  .accordion {
+    width: 100%;
+    padding: 1rem;
+    border-bottom: $lightGrayishBlue;
+
+    .accordion__toggler {
+      height: 2rem;
+      width: 100%;
+      transition: all 0.2s;
+
+      &:hover,
+      .active {
+        background: hsl(0, 0, 90%);
+        cursor: pointer;
+      }
+
+      .accordion__title {
+        font-weight: 400;
+
+        &:hover,
+        .active {
+          font-weight: 700;
+        }
+      }
+
+      .accordion__arrow {
+        &.active {
+          transform: scaleY(-1);
+        }
+      }
+    }
+
+    .accordion__panel {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
