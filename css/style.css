@@ -107,6 +107,7 @@ body {
 
 .accordions .accordion .accordion__input:checked ~ .accordion__label {
   font-weight: 700;
+  color: #1d1e35;
 }
 
 .accordions .accordion .accordion__input:checked ~ .accordion__label::after {
@@ -115,6 +116,7 @@ body {
 
 .accordions .accordion .accordion__content {
   background-color: white;
+  color: #787887;
   line-height: 1.6;
   font-size: 0.75rem;
   max-height: 0;
