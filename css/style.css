@@ -58,6 +58,30 @@ body {
   }
 }
 
+@media screen and (min-width: 376px) {
+  .card {
+    background-color: white;
+    border-radius: 2rem;
+    display: flex;
+    box-shadow: 0px 40px 30px rgba(0, 0, 0, 0.2);
+    height: 31.875rem;
+    max-width: 57.2rem;
+    margin: 4rem 2rem 0 2rem;
+  }
+  .card__images {
+    flex: 0 0 40%;
+  }
+  .card__faq {
+    flex: 1 1 60%;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .desktop-only {
+    display: none;
+  }
+}
+
 .accordions {
   margin: 2rem 0.8rem 0.8rem 0.8rem;
 }
